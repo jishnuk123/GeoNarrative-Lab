@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seattle Restaurants GeoNarrative</title>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" />
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Scripts -->
+<script src="https://unpkg.com/scrollama"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<section id="cover" style="background: url('img/background.jpeg') no-repeat center center; background-size: cover;">
+  <div id="intro">
+    <h1>My Favorite Seattle Restaurants</h1>
+    <h5>Thai & Italian Cuisine</h5>
+    <p>Scroll down to explore my favorite restaurants in Seattle!</p>
+  </div>
+</section>
+
+<div id="legend">
+  <h4>Legend</h4>
+  <div><span class="legend-color" style="background:#e63946"></span> Thai</div>
+  <div><span class="legend-color" style="background:#457b9d"></span> Italian</div>
+  <div><span class="legend-color" style="background:#aaaaaa"></span> Fusion</div>
+</div>
+
+<!-- GEO NARRATIVE SECTION -->
+<section id="geonarrative">
+  <div id="storyboard">
+    <div id="map"></div>
+  </div>
+
+  <article class="scene" data-scene="0">
+    <p>All my favorite Thai and Italian restaurants in Seattle.</p>
+  </article>
+
+  <article class="scene" data-scene="1">
+    <p>Thai Restaurants in Seattle.</p>
+  </article>
+
+  <article class="scene" data-scene="2">
+    <p>Italian Restaurants in Seattle.</p>
+  </article>
+
+  <article class="scene" data-scene="3">
+    <p>Kin Len Thai Night Bites</p>
+  </article>
+
+  <article class="scene" data-scene="4">
+    <p>Due Cucina</p>
+  </article>
+
+  <article class="scene" data-scene="5">
+  <p>
+    These are my two favorite restaurants of my two favorite cuisines. 
+    Kin Len is such a great option for savory dishes with great aesthetics and drinks as well. 
+    For Dué Cucina I love that you can basically personalize your own pasta so these two are definitely my favorite. 
+    It was very interesting to find data about all the different Thai and Italian cuisines 
+    in Seattle considering I have been to so few so it was great to see all the other options 
+    and how they are spread out.
+  </p>
+</article>
+</section>
+
+<!-- FOOTER -->
+<section id="footer">
+  <img src="img/italian.jpeg" alt="Closing Page" id="footer-img">
+  <div id="footer-text">
+    <p>Thanks for exploring my favorite restaurants in Seattle!</p>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
